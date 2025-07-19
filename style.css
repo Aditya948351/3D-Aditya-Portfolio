@@ -1,48 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .title {
-    color: orange;
+  color: orange;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  z-index: 1;
 }
 
 .centered-model {
   position: relative;
+  width: 100%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px; /* adjust as needed */
-  width: 100%;
-  margin: 40px 0;
-  z-index: 10;
-  overflow: hidden;
-}
-
-.centered-model iframe {
-  width: 80%;
-  height: 100%;
-  border: none;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-  background-color: transparent;
-}
-
-.model-overlay-text {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 1.5rem;
-  background: rgba(0,0,0,0.5);
-  padding: 10px 20px;
-  border-radius: 8px;
 }
 
 .glass-model-overlay {
   position: absolute;
-  top: 100px; /* adjust to shift down below nav */
   width: 420px;
   height: 460px;
-  pointer-events: none; /* allow user to interact with content behind */
-  opacity: 0.9; /* semi-transparent effect */
-  z-index: 10; /* make sure it's above content but below modals, etc. */
+  pointer-events: none;
+  opacity: 0.95;
+  z-index: 2;
 }
 
 .glass-model-overlay iframe {
@@ -52,3 +44,21 @@
   background: transparent;
 }
 
+.greeting-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.15);
+  z-index: 0;
+  user-select: none;
+}
+
+.down {
+    padding-top: 50px;
+    text-transform: uppercase;
+    text-decoration: underline double red;
+}
