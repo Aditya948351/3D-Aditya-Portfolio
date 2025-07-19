@@ -64,6 +64,7 @@ body {
   text-transform: uppercase;
   text-decoration: underline double red;
   font-size: 1rem;
+  color: chartreuse;
 }
 
 /* ✅ Responsive Styles */
@@ -74,7 +75,7 @@ body {
 
   .glass-model-overlay {
     width: 300px;
-    height: 450px;
+    height: 550px;
   }
 
   .greeting-text {
