@@ -33,11 +33,11 @@ body {
 
 .glass-model-overlay {
   position: absolute;
-  width: 420px;
-  height: 460px;
+  width: 2000px;
+  height: 960px;
   pointer-events: none;
   opacity: 0.95;
-  z-index: 2;
+  z-index: 0;
 }
 
 .glass-model-overlay iframe {
@@ -55,7 +55,7 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.15);
-  z-index: 0;
+  z-index: -0.5;
   user-select: none;
   text-align: center;
   white-space: nowrap;
