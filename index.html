@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Aditya Patil Portfolio</title>
-</head>
-<body>
-    <div class="body1">
-  <h1 class="title">When You Give Your Website a AR Soul 😈</h1>
-
-  <div class="centered-model">
-    <div class="glass-model-overlay">
-      <iframe
-  title="Girl Character" 
-  frameborder="0" 
-  allowfullscreen 
-  mozallowfullscreen="true" 
-  webkitallowfullscreen="true" 
-  allow="autoplay; fullscreen; xr-spatial-tracking" 
-  src="https://sketchfab.com/models/7e66266564b74a6390539cf4ecae89b4/embed?autostart=1&camera=0&preload=1&transparent=1&ui_hint=0&ui_infos=0&ui_controls=0&ui_watermark=0">
-</iframe>
-
-      </iframe>
-    </div>
-    <div class="greeting-text">codeverse_48</div>
-  </div>
-
-  <section> 
-    <p>
-      Imagine your portfolio looking like this — hit follow for more dev experiments 😅🔧💻
-    </p>
-  </section>
-  <br>
-  </div>
-  <section id="projects" class="another-body">Projects
-    <ul>For Complete Portfolio Development. Contact The developer with 500 rupees in your PhonePe😅</ul>
-  </section>
-</body>
+  <head>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      model-viewer {
+        width: 100%;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer 
+      src="https://raw.githubusercontent.com/Aditya948351/Used-Images/main/0%20(3).glb" 
+      alt="3D model"
+      auto-rotate
+      camera-controls
+      ar>
+    </model-viewer>
+  </body>
 </html>
